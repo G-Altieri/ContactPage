@@ -32,25 +32,25 @@
 
         <!-- FORM -->
         <div class="flex cont">
-            <form>
+            <form method="post" name="form_login">
                 <div class="form-group">
                     <label>Come ti chiami?</label>
-                    <input type="text" class="form-control" id="inputName" maxlength="20">
+                    <input type="text" class="form-control" id="inputName" name="inputName" maxlength="20">
 
                     <br>
 
                     <label>Qual è il tuo numero di telefono?</label>
-                    <input type="tel" class="form-control" id="inputNum" maxlength="20">
+                    <input type="tel" class="form-control" id="inputNum" name="inputNum" maxlength="20">
 
                     <br>
 
                     <label> Dove vivi?</label>
-                    <input type="text" class="form-control" id="inputCity" maxlength="20">
+                    <input type="text" class="form-control" id="inputCity" name="inputCity" maxlength="20">
 
                     <br>
 
                     <label>A che ora preferisci essere ricontattata/o?</label>
-                    <input type="time" value="13:45" class="form-control" id="inputPreference" maxlength="30">
+                    <input type="time" value="13:45" class="form-control" id="inputPreference" name="inputPreference" maxlength="30">
 
                     <br>
                     <div class="alert alert-danger hidden" role="alert" id="error">

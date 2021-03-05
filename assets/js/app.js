@@ -68,7 +68,7 @@ function validate() {
     } else {
         $("#error").addClass("hidden")
         console.log("Submit")
-        window.location.href = "./invioEseguito.php";
+        window.location.href = "./php/insertContact.php";
     }
 
 }
@@ -80,6 +80,7 @@ function ViewError(id) {
 
 function ViewSucces(id) {
     $("#" + id).removeClass("form-error")
+    $.post("./php/insertContact.php", { nome: name, tel: num });
 }
 
 
