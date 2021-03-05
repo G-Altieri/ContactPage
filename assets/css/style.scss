@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
 
-$rosso:#af384f;
-$rosa:#ffd4d4;
-$white:white !important;
+$rosso: #af384f;
+$rosa: #ffd4d4;
+$white: white !important;
 
 html body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: $white;
     color: $rosso !important;
+}
+
+.my-nav {
+    box-shadow: 0px 5px 11px 0px rgba(255, 212, 212, 0.3);
+    width: 100%;
 }
 
 .bg-light {
@@ -29,10 +34,9 @@ html body {
     background: $white;
     position: relative;
     margin-top: 2rem;
-
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
@@ -41,8 +45,19 @@ html body {
     background-color: #fff;
     border-color: $rosa;
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(255,212,212,.50);
+    box-shadow: 0 0 0 0.2rem rgba(255, 212, 212, 0.5);
 }
 .form-error {
-    box-shadow: 0 0 0 .2rem rgba(255, 0, 0, .80);
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.8);
+}
+
+.social {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.socialImg {
+    width: 50px;
+    margin: 30px;
+    margin-top: 5rem;
 }
