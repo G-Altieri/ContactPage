@@ -12,7 +12,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css?versione=<?php echo time(); ?>">
 
 
 </head>
@@ -31,7 +31,7 @@
 
         <!-- FORM -->
         <div class="flex cont">
-            <form >
+            <form>
                 <div class="form-group">
                     <label>Come ti chiami?</label>
                     <input type="text" class="form-control" id="inputName" maxlength="20">
@@ -39,7 +39,7 @@
                     <br>
 
                     <label>Qual è il tuo numero di telefono?</label>
-                    <input type="text" class="form-control" id="inputNum"  maxlength="10">
+                    <input type="tel" class="form-control" id="inputNum" maxlength="20">
 
                     <br>
 
@@ -49,15 +49,15 @@
                     <br>
 
                     <label>A che ora preferisci essere ricontattata/o?</label>
-                    <input type="text" class="form-control" id="inputPreference" maxlength="30">
+                    <input type="time" value="13:45" class="form-control" id="inputPreference" maxlength="30">
 
                     <br>
                     <div class="alert alert-danger hidden" role="alert" id="error">
-                      k
+                        k
                         <br>
                     </div>
                 </div>
-                
+
             </form>
             <button class="btn btn-my mx-auto" onclick="validate()">Invia</button>
         </div>
@@ -66,9 +66,11 @@
     </div>
     <!-- ***Container*** -->
 
+
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/app.js?versione=<?php echo time(); ?>"></script>
 </body>
 
 </html>
+
