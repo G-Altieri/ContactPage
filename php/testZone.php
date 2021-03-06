@@ -2,16 +2,18 @@
 
     require_once('database.php');
 
-    $nome = "Stefano";
+    $nome = "Stefano54";
+    $id = "423424";
 
-    $query="INSERT INTO prova(`name`)
-            VALUES (:nome)";
+    $query="INSERT INTO prova(`id`,`name`)
+            VALUES (:id,:nome)";
 
 
 
     //Interogo il db
     $check = $db->prepare($query);
     $check->bindParam(':nome', $nome, PDO::PARAM_STR);
+    $check->bindParam(':id', $id, PDO::PARAM_STR);
 
     $check->execute();
 

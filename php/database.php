@@ -5,7 +5,7 @@ try {
     $hostname = "localhost";
     $dbname = "dbh4vfkfle8ymo";
     $user = "uwkme7s1g4eho";
-    $pass = "sitofiko";
+    $pass = "lucazzottifrancesco";
 
     //Creazione oggetto PDO e connessione al db
     $db = new PDO ("mysql:host=$hostname;dbname=$dbname", $user, $pass);

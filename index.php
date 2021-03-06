@@ -20,7 +20,7 @@
 <body>
     <!-- NAVBAR Image and text -->
     <div class="my-nav">
-        <nav class="navbar navbar-light navbar-brand bg-light p-3 my-nav">
+        <nav class="navbar navbar-light navbar-brand bg-light p-3 ">
             <img src="./assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
             Centro Estetico Monica
         </nav>
@@ -32,25 +32,25 @@
 
         <!-- FORM -->
         <div class="flex cont">
-            <form method="post" name="form_login">
+            <form>
                 <div class="form-group">
                     <label>Come ti chiami?</label>
-                    <input type="text" class="form-control" id="inputName" name="inputName" maxlength="20">
+                    <input type="text" class="form-control" id="inputName" maxlength="20">
 
                     <br>
 
                     <label>Qual è il tuo numero di telefono?</label>
-                    <input type="tel" class="form-control" id="inputNum" name="inputNum" maxlength="20">
+                    <input type="tel" class="form-control" id="inputNum" maxlength="20">
 
                     <br>
 
                     <label> Dove vivi?</label>
-                    <input type="text" class="form-control" id="inputCity" name="inputCity" maxlength="20">
+                    <input type="text" class="form-control" id="inputCity" maxlength="20">
 
                     <br>
 
                     <label>A che ora preferisci essere ricontattata/o?</label>
-                    <input type="time" value="13:45" class="form-control" id="inputPreference" name="inputPreference" maxlength="30">
+                    <input type="time" value="13:45" class="form-control" id="inputPreference" maxlength="30">
 
                     <br>
                     <div class="alert alert-danger hidden" role="alert" id="error">
@@ -60,10 +60,29 @@
                 </div>
 
             </form>
+
+            <!-- Loading Spinner -->
+            <div id="loading" class="d-flex justify-content-center text-primary mb-3 hidden">
+                <div id="spinner" class="spinner-border hidden" role="status">
+                    <span class="sr-only">Loading...</span>
+                    <br>
+                </div>
+            </div>
+            <!-- ***Loading Spinner*** -->
+
             <button class="btn btn-my mx-auto" onclick="validate()">Invia</button>
         </div>
         <!-- ***FORM ***-->
 
+        <!-- Error -->
+        <br>
+        <div id="sendError" class="alert alert-danger hidden" role="alert">
+            <h4 class="alert-heading">Ops qualcosa è andato storto</h4>
+            <p></p>
+            <hr>
+            <p class="mb-0">Riprovare!!!</p>
+        </div>
+        <!-- ***Error*** -->
 
         <!-- Social -->
         <div class="social">

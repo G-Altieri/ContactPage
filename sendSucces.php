@@ -19,10 +19,12 @@
 
 <body>
     <!-- NAVBAR Image and text -->
-    <nav class="navbar navbar-light navbar-brand bg-light p-3">
-        <img src="./assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        Centro Estetico Monica
-    </nav>
+    <div class="my-nav">
+        <nav class="navbar navbar-light navbar-brand bg-light p-3 ">
+            <img src="./assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Centro Estetico Monica
+        </nav>
+    </div>
    <br><br>
     <center><h1> <br> La Contatteremo al piú presto</h1><br><h2>Grazie</h2></center>
 
