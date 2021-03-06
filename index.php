@@ -19,11 +19,12 @@
 
 <body>
     <!-- NAVBAR Image and text -->
-    <nav class="navbar navbar-light navbar-brand bg-light p-3">
-        <img src="./assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        Centro Estetico Monica
-    </nav>
-    <!-- FORM -->
+    <div class="my-nav">
+        <nav class="navbar navbar-light navbar-brand bg-light p-3 ">
+            <img src="./assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Centro Estetico Monica
+        </nav>
+    </div>
 
     <!-- Container -->
     <div class="container">
@@ -59,9 +60,40 @@
                 </div>
 
             </form>
+
+            <!-- Loading Spinner -->
+            <div id="loading" class="d-flex justify-content-center text-primary mb-3 hidden">
+                <div id="spinner" class="spinner-border hidden" role="status">
+                    <span class="sr-only">Loading...</span>
+                    <br>
+                </div>
+            </div>
+            <!-- ***Loading Spinner*** -->
+
             <button class="btn btn-my mx-auto" onclick="validate()">Invia</button>
         </div>
         <!-- ***FORM ***-->
+
+        <!-- Error -->
+        <br>
+        <div id="sendError" class="alert alert-danger hidden" role="alert">
+            <h4 class="alert-heading">Ops qualcosa è andato storto</h4>
+            <p></p>
+            <hr>
+            <p class="mb-0">Riprovare!!!</p>
+        </div>
+        <!-- ***Error*** -->
+
+        <!-- Social -->
+        <div class="social">
+            <a href="https://www.instagram.com/centroesteticomonicaevolution/">
+                <img src="/assets/img/insta.png" alt="Instagram" class="socialImg">
+            </a>
+            <a href="https://www.facebook.com/centroesteticomonika">
+                <img src="/assets/img/facebook.png" alt="Facebook" class="socialImg">
+            </a>
+        </div>
+        <!-- **Social** -->
 
     </div>
     <!-- ***Container*** -->
@@ -73,4 +105,3 @@
 </body>
 
 </html>
-

@@ -1,5 +1,13 @@
 /*Metodo per il controllo Form */
+
+var idName = "inputName"
+var idNum = "inputNum"
+var idCity = "inputCity"
+var idPreference = "inputPreference"
+
+
 function validate() {
+
     var idName = "inputName"
     var idNum = "inputNum"
     var idCity = "inputCity"
@@ -68,7 +76,7 @@ function validate() {
     } else {
         $("#error").addClass("hidden")
         console.log("Submit")
-        window.location.href = "./invioEseguito.php";
+        sendData()
     }
 
 }
@@ -83,22 +91,63 @@ function ViewSucces(id) {
 }
 
 
+function sendData() {
 
-/* Non li butto
-var realNum = parseInt(num, 10)
-            if (isNaN(realNum)) {
-                error = true
-                errorMsg = "Inserisci un numero valido"
-                ViewError(idNum)
-            }else{
-                if (realNum.toString().length == num.length){
-                    ViewSucces(idNum)
-              
-                }else{
-                    error = true
-                    errorMsg = "Inserisci un numero valido"
-                    ViewError(idNum)
-                }
+    var name = $(inputName).val();
+    var num = $(inputNum).val();
+    var city = $(inputCity).val();
+    var preference = $(inputPreference).val();
+
+
+    //chiamata ajax
+    $("#loading").removeClass("hidden")
+    $("#spinner").removeClass("hidden")
+    $.ajax({
+
+        //Tipo di invio
+        type: "POST",
+
+        //Link chiamata
+        url: "/php/insertContact.php",
+
+        //Dati da inviare
+        //data: "&name="+$("#inputName").val()+ "&tel="+$("#inputNum").val()+"&city="+city, non funzionava
+        data: {
+            name: name,
+            tel: num,
+            city: city,
+            preference: preference,
+        },
+        cache: false,
+
+        //Gestione successo ed errore
+        success: function (data) {
+            // alert("eseguita" + data) // messaggio di avvenuta aggiunta valori al db (preso dal file risultato_aggiunta.php) potete impostare anche un alert("Aggiunto, grazie!");
+            $("#loading").addClass("hidden")
+            $("#spinner").addClass("hidden")
+
+            //console.log("data: "+data)
+         
+            //Controllo Insert
+            if (data) {
+                //console.log("Aggiunto")
+                window.location.href = "sendSucces.php";
+            } else {
+                $("#loading").addClass("hidden")
+                $("#spinner").addClass("hidden")
+                $("#sendError").removeClass("hidden")
+                console.log("Error insert db")
             }
 
-*/
+        },
+        error: function (xhr, status, error) {
+
+            $("#loading").addClass("hidden")
+            $("#spinner").addClass("hidden")
+
+            $("#sendError").removeClass("hidden")
+            console.log("Error" + xhr);
+
+        },
+    });
+}

@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
 html body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: white !important;
   color: #af384f !important;
+}
+
+.my-nav {
+  -webkit-box-shadow: 0px 5px 11px 0px rgba(255, 212, 212, 0.3);
+          box-shadow: 0px 5px 11px 0px rgba(255, 212, 212, 0.3);
+  width: 100;
 }
 
 .bg-light {
@@ -43,5 +49,16 @@ html body {
 .form-error {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.8);
           box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.8);
+}
+
+.social {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.socialImg {
+  width: 50px;
+  margin: 30px;
+  margin-top: 5rem;
 }
 /*# sourceMappingURL=style.css.map */
