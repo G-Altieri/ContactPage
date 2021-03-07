@@ -8,7 +8,7 @@ require_once('database.php');
  $query="SELECT * FROM contact  ";
      //intergorazione al db
      $check = $db->prepare($query);
-     $check->bindParam(':email', $email, PDO::PARAM_STR);
+     //$check->bindParam(':email', $email, PDO::PARAM_STR);
      $check->execute();
  
      //prendo il risultato
