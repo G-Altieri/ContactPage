@@ -1,9 +1,0 @@
- <?php
-     $HOST = "localhost";
-     $USER = "uwkme7s1g4eho";
-     $PASSWORD = "lucazzottifrancesco";
-    mysql_connect("HOST", "USER", "PASSWORD"); 
-    
-    mysql_select_db("NOME_DATABASE"); 
-    
-?> 
