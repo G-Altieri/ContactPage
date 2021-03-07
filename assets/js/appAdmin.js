@@ -10,6 +10,7 @@ $("#updateTable").click(function(){
       var $table = $("#myTable2");
   
       $.getJSON("/php/update.php", function(result){
+        
       //ciclo il file json
         $.each(result, function(i, value){
           //create the row
@@ -74,6 +75,7 @@ $("#updateTable").click(function(){
   function copyAlert(status){
       if(status){
           $("#copyAlert").removeClass("hidden")
+        
       }else{
           $("#copyAlert").addClass("hidden")
       }
@@ -93,7 +95,8 @@ $("#updateTable").click(function(){
       $("#msgAlertCopy").append("<strong>Copiato! </strong>"+copyText)
      
       copyAlert(true)
-  
+   
   }
+
   
   

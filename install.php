@@ -32,20 +32,22 @@
         </nav>
     </div>
 
+
+
+
     <!-- Container -->
+    <div class="container-fluid">
     
   
+        <div id="copyAlert" class="alert alert-info alert-dismissible fade show m-0" role="alert">
+            <div id="msgAlertCopy"></div>
+          <button type="button" class="close" onClick="copyAlert(false)" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
 
-<div id="copyAlert" class="alert alert-info alert-dismissible fade show" role="alert">
-    <div id="msgAlertCopy"></div>
-  <button type="button" class="close" onClick="copyAlert(false)" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-
-
-    <div class="container3">
-        <button id="updateTable">Aggiorna</button>
+    <!-- Button Aggiorna -->
+    <button id="updateTable" type="button" class="btn btn-secondary button-aggiorna">Aggiorna</button>
        
 
 
@@ -53,7 +55,7 @@
     <input class="form-control" id="inputSearch" type="text" placeholder="Cerca..">
   <br>
 
-        <table class="table table-striped">
+        <table class="table table-striped table-responsive-md">
             <thead>
                 <tr>
                     <th scope="col">#</th>
