@@ -70,7 +70,7 @@
             </div>
             <!-- ***Loading Spinner*** -->
 
-            <button class="btn btn-my mx-auto" onclick="validate()">Invia</button>
+            <button class="btn btn-my mx-auto pl-5 pr-5" onclick="validate()">Invia</button>
         </div>
         <!-- ***FORM ***-->
 
@@ -86,18 +86,29 @@
 
         <!-- Social -->
         <div class="social">
-            <a href="https://www.instagram.com/centroesteticomonicaevolution/">
-                <img src="/assets/img/insta.png" alt="Instagram" class="socialImg">
+            <a href="https://www.instagram.com/centroesteticomonicaevolution">
+                <img src="/assets/img/insta.png" alt="Facebook" class="socialImg">
             </a>
+            
             <a href="https://www.facebook.com/centroesteticomonika">
                 <img src="/assets/img/facebook.png" alt="Facebook" class="socialImg">
             </a>
         </div>
         <!-- **Social** -->
-
+        <br><br><br>
     </div>
     <!-- ***Container*** -->
 
+    <!---Footer-->
+    <footer class="bg-light text-center myFooter">
+        <!-- Copyright -->
+        <div class="text-center p-3 bg-footer">
+            © 2021 Copyright: Centro Estetico Monica <br>
+            <a class="text-create" href="">Created by Giovanni</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!---Footer-->
 
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
