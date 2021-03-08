@@ -23,6 +23,12 @@ html body {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
+  border-radius: 25px;
+}
+
+.btn:hover {
+  color: white !important;
+  text-decoration: none;
 }
 
 .cont {
@@ -60,6 +66,35 @@ html body {
   width: 50px;
   margin: 30px;
   margin-top: 5rem;
+}
+
+.socialImg:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.myFooter {
+  position: relative;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0;
+}
+
+.bg-footer {
+  background: rgba(255, 212, 212, 0.5);
+  font-size: 0.9rem;
+}
+
+.text-create {
+  color: #616161;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-height: 870px) {
+  .myFooter {
+    position: absolute;
+  }
 }
 
 /*ADMIN PAGE CSS*/
